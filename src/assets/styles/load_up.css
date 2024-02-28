@@ -1,0 +1,29 @@
+.container > #load_up_img {
+    position: absolute;
+    top: 40%;
+}
+
+
+@keyframes appearAndZoomOut {
+    0% {
+        transform: scale(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(50%);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0%);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

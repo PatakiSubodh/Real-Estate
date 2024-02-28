@@ -1,0 +1,18 @@
+.scroll_to_top > a {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    color: #0f0f0f;
+    font-size: 50px;
+}
+.scroll_to_top > a > #double_up_arrow{
+    display: none;
+}
+.scroll_to_top > a:hover > #single_up_arrow{
+    display: none;
+}
+.scroll_to_top > a:hover > #double_up_arrow{
+    display: block;
+    font-size: 60px;
+    color: #1f6a26;
+}
