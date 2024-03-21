@@ -287,6 +287,22 @@ html{
     color: #1f6a26;
 }
 
+.footer_links_li_contact_us {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.footer_links_li_contact_us > a {
+    text-decoration: none;
+    color: #0f0f0f;
+    position: relative;
+}
+
+.footer_links_li_contact_us > a:hover {
+    color: #1f6a26;
+    font-weight: 500;
+}
+
 .social_media_handles {
     color: #1f6a26;
     font-size: 22px;
