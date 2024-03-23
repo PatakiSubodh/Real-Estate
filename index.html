@@ -33,63 +33,88 @@
                 <div class="nav_bar">
                     <!-- left side nav bar -->
                     <div class="left_side_nav_bar">
-                        <a href="/index.html"><img src="/src/assets/images/logos/transparent/ezestates_transparent_logo_left.png" alt="Ezestates logo" id="left_side_nav_bar_img"></a>
+                        <a href="/index.html"><img src="/src/assets/images/logos/transparent/ezestates_transparent_logo_left.png" alt="Ezestates logo" id="left_side_nav_bar_img1"></a>
+                        <a href="/index.html"><img src="/src/assets/images/logos/transparent/ezestates_transparent_favicon.png" alt="Ezestates logo" id="left_side_nav_bar_img2"></a>
                     </div>
 
                     <!-- right side nav bar -->
-                    <div class="right_side_nav_bar">
-                        <a href="#home_content" id="right_side_nav_bar_home">Home</a>
-                        <a href="#about_us_content" id="right_side_nav_bar_about_us">About Us</a>
-                        <a href="#services_content" id="right_side_nav_bar_services">Services</a>
-                        <a href="#reviews_content" id="right_side_nav_bar_reviews">Reviews</a>
-                        <a href="#contact_us_content" id="right_side_nav_bar_contact_us">Contact Us</a>
-                    </div>
+                    <nav class="desktop-nav">
+                        <div class="right_side_nav_bar">
+                            <a href="#home_content" id="right_side_nav_bar_home">Home</a>
+                            <a href="#about_us_content" id="right_side_nav_bar_about_us">About Us</a>
+                            <a href="#services_content" id="right_side_nav_bar_services">Services</a>
+                            <a href="#reviews_content" id="right_side_nav_bar_reviews">Reviews</a>
+                            <a href="#contact_us_content" id="right_side_nav_bar_contact_us">Contact Us</a>
+                        </div>
+                    </nav>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
                 </div>
             </header>
 
+            <nav class="mobile-nav">
+                <a href="#home_content" id="right_side_nav_bar_home">Home</a>
+                <a href="#about_us_content" id="right_side_nav_bar_about_us">About Us</a>
+                <a href="#services_content" id="right_side_nav_bar_services">Services</a>
+                <a href="#reviews_content" id="right_side_nav_bar_reviews">Reviews</a>
+                <a href="#contact_us_content" id="right_side_nav_bar_contact_us">Contact Us</a>
+            </nav>
+
+
+                <div class="gradient"></div>
+
             <div class="main_content">
                 <!-- home page section -->
-                <section class="main_content" id="home_content">
+                <section id="home_content">
                     <div class="home_page">
                         <!-- left side -->
                         <div class="home_page_left_side_content">
-                            <div class="journey_begin">
-                                <p>Your</p>
-                                <p>Rental Journey</p>
-                                <p>Begins Here</p>
-                            </div>
-                            <p class="journey_details">We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
-                            <div id="home_page_button">
-                                <a href="/src/pages/rent_now.html" class="greenBg_whiteText_button  anchor_role_button" role="button">Rent Now</a>
-                                <a href="/src/pages/rent_ur_place.html" class="anchor_role_button"  id="rent_ur_place_button" role="button">Rent Your Place</a>
+                            <div id="home_page_left_side_content_wrapper">
+                                <div class="journey_begin">
+                                    <p>Your</p>
+                                    <p>Rental Journey</p>
+                                    <p>Begins Here</p>
+                                </div>
+                                <p class="journey_details">We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
+                                <div id="home_page_button">
+                                    <a href="/src/pages/rent_now.html" class="greenBg_whiteText_button  anchor_role_button" role="button">Rent Now</a>
+                                    <a href="/src/pages/rent_ur_place.html" class="anchor_role_button"  id="rent_ur_place_button" role="button">Rent Your Place</a>
+                                </div>
                             </div>
                         </div>
                         <!-- right side -->
-                        <div id="right_side_content">
-                            <img src="/src/assets/images/generals/handHouse.png" alt="Rental Journey" id="home_page_right_side_content_img">
+                        <div id="home_page_right_side_content">
+                            <img src="/src/assets/images/generals/13_1.jpg" alt="Rental Journey" id="home_page_right_side_content_img">
                         </div>
                     </div>
                 </section>
 
                 <!-- about us page -->
-                <section class="main_content" id="about_us_content">
+                <section id="about_us_content">
                     <div class="about_us_page">
                         <!-- left side -->
-                        <div class="about_us_page_left_side_content">
-                            <img src="/src/assets/images/generals/1.png" alt="Beginning" id="about_us_page_left_side_content_img">
+                        <div id="about_us_page_left_side_content">
+                            <img src="/src/assets/images/generals/11.jpg" alt="Beginning" id="about_us_page_left_side_content_img">
                         </div>
                         <!-- right side -->
                         <div class="about_us_page_right_side_content">
-                            <div class="journey_begin">
-                                <p>Begin</p>
-                                <p>your awesome</p>
-                                <p>journey</p>
-                            </div>
-                            <div>
-                                <p class="journey_details journey_details1">Looking for the perfect home to rent? Our user-friendly house rental website makes your search a breeze. Browse through a diverse range of listings, From cozy apartments to spacious family houses.</p>
-                                <p class="journey_details journey_details2">With detailed descriptions, vivid photos, and handy filters, finding your ideal rental is just a click away.</p>
-
-                                <a href="/src/pages/rent_now.html" role="button" class="greenBg_whiteText_button anchor_role_button">Continue</a>
+                            <div id="about_us_page_right_side_content_wrapper">
+                                <div class="journey_begin">
+                                    <p>Begin</p>
+                                    <p>your awesome</p>
+                                    <p>journey</p>
+                                </div>
+                                <div class="about_us_page_right_side_content_for_desktop">
+                                    <p class="journey_details journey_details1">Looking for the perfect home to rent? Our user-friendly house rental website makes your search a breeze. Browse through a diverse range of listings, From cozy apartments to spacious family houses.</p>
+                                    <p class="journey_details journey_details2">With detailed descriptions, vivid photos, and handy filters, finding your ideal rental is just a click away.</p>
+    
+                                    <a href="/src/pages/rent_now.html" role="button" class="greenBg_whiteText_button anchor_role_button">Continue</a>
+                                </div>
+                                <div class="about_us_page_right_side_content_for_mobile">
+                                    <p class="journey_details about_us_page_right_side_content_for_mobile_p">Easily find your ideal rental home with our user-friendly website offering diverse listings, detailed descriptions, vivid photos, and handy filters.</p>
+                                    <a href="/src/pages/rent_now.html" class="about_us_page_right_side_content_for_mobile_read_more">read more <span>-></span></a>
+                                </div>
                             </div>
 
                         </div>
@@ -97,176 +122,217 @@
                 </section>
 
                 <!-- services page -->
-                <section class="main_content" id="services_content">
+                <section id="services_content">
                     <div class="services_page">
                         <p class="journey_begin services_page_review_page">See Our Services</p>
-                        <p class="journey_details services_page_review_page">We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
+                        <p class="journey_details services_page_review_page services_page_review_page_for_mobile">We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
                         <div class="playcards">
                             <div class="service_playcard">
-                                <img src="/src/assets/images/generals/Vector-1.png" alt="responsive" class="services_playcard_image">
-                                <p class="services_playcard_image_headline">RESPONSIVE</p>
-                                <p class="services_playcard_image_description">Our commitment to being responsive means that your concerns and efficient.</p>
-                            </div> <br>
+                                <div class="playcard_img_div">
+                                    <img src="/src/assets/images/generals/Vector-1.png" alt="responsive" class="services_playcard_image">
+                                </div>
+                                <div  class="playcard_description_div">
+                                    <div>
+                                        <p class="services_playcard_image_headline">RESPONSIVE</p>
+                                        <p class="services_playcard_image_description">Our commitment to being responsive means that your concerns and efficient.</p>
+                                    </div>
+                                </div>
+                            </div> 
+
                             <div class="service_playcard">
-                                <img src="/src/assets/images/generals/Vector-2.png" alt="green" class="services_playcard_image">
-                                <p class="services_playcard_image_headline">GREEN</p>
-                                <p class="services_playcard_image_description">Experience the convenience of our responsive platform, ensuring swift communication.</p>
-                            </div> <br>
+                                <div class="playcard_img_div">
+                                    <img src="/src/assets/images/generals/Vector-2.png" alt="green" class="services_playcard_image">
+                                </div>
+                                <div  class="playcard_description_div">
+                                    <div>
+                                        <p class="services_playcard_image_headline">GREEN</p>
+                                        <p class="services_playcard_image_description">Experience the convenience of our responsive platform, ensuring swift communication.</p>
+                                    </div>
+                                </div>
+                            </div> 
+
                             <div class="service_playcard">
-                                <img src="/src/assets/images/generals/Vector-3.png" alt="security" class="services_playcard_image">
-                                <p class="services_playcard_image_headline">SECURITY</p>
-                                <p class="services_playcard_image_description">Ensuring swift communication and quick solutions for all your rental needs.</p>
-                            </div> <br>
+                                <div class="playcard_img_div">
+                                    <img src="/src/assets/images/generals/Vector-3.png" alt="security" class="services_playcard_image">
+                                </div>
+                                <div class="playcard_description_div">
+                                    <div>
+                                        <p class="services_playcard_image_headline">SECURITY</p>
+                                        <p class="services_playcard_image_description">Ensuring swift communication and quick solutions for all your rental needs.</p>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <br>
                         </div>
                     </div>
                 </section>
 
                 <!-- reviews page -->
-                <section class="main_content" id="reviews_content">
+                <section id="reviews_content">
                     <div class="reviews_page">
                         <div id="review_content">
                             <p class="journey_begin services_page_review_page">What Customers Say</p>
                             <p class="journey_begin services_page_review_page">About Our Services</p>
-                            <p class="journey_details services_page_review_page">We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
+                            <p class="journey_details services_page_review_page services_page_review_page_for_mobile">We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
                         </div>
                         <div class="playcards">
                             <div class="review_playcard">
-                                <img src="/src/assets/images/generals/review_1.png" alt="review_1_img" class="review_playcard_image">
-                                <p class="review_playcard_image_headline">David Anderson</p>
-                                <p class="review_playcard_image_description">
-                                    "I loved the experience, renting a home was an pleasure. From the communication was seamless and professional".
-                                </p>
+                                <div class="playcard_img_div">
+                                    <img src="/src/assets/images/generals/review_1.png" alt="review_1_img" class="review_playcard_image">
+                                </div>
+                                <div class="playcard_description_div">
+                                    <div>
+                                        <p class="review_playcard_image_headline">David Anderson</p>
+                                        <p class="review_playcard_image_description"> 
+                                            "I loved the experience, renting a home was an pleasure. From the communication was seamless and professional".</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="review_playcard">
-                                <img src="/src/assets/images/generals/review_2.png" alt="review_2_img" class="review_playcard_image">
-                                <p class="review_playcard_image_headline">Alex Mitchell</p>
-                                <p class="review_playcard_image_description">
-                                    "It was an Amazing Experience, the attention to detail, personalized approach made the entire process stress-free".
-                                </p>
+                                <div class="playcard_img_div">
+                                    <img src="/src/assets/images/generals/review_2.png" alt="review_2_img" class="review_playcard_image">
+                                </div>
+                                <div class="playcard_description_div">
+                                    <div>
+                                        <p class="review_playcard_image_headline">Alex Mitchell</p>
+                                        <p class="review_playcard_image_description">                   "It was an Amazing Experience, the attention to detail, personalized approach made the entire process stress-free".</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="review_playcard">
-                                <img src="/src/assets/images/generals/review_3.png" alt="review_3_img" class="review_playcard_image">
-                                <p class="review_playcard_image_headline">Ryan Bennett</p>
-                                <p class="review_playcard_image_description">
-                                    "Our experience was so good with renting services exceeded all      expectations. Demonstrated a deep understanding".
-                                </p>
+                                <div class="playcard_img_div">
+                                    <img src="/src/assets/images/generals/review_3.png" alt="review_3_img" class="review_playcard_image">
+                                </div>
+                                <div class="playcard_description_div">
+                                    <div>
+                                        <p class="review_playcard_image_headline">Ryan Bennett</p>
+                                        <p class="review_playcard_image_description">
+                                            "Our experience was so good with renting services exceeded all  expectations. Demonstrated a deep understanding".</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>        
-            </div>
 
-            <div style="display: flex; justify-content: end;">
-                <img src="/src/assets/images/generals/footerImg2.png" alt="footer image" height="200px">
-            </div>
-            
-            <div class="gradient gradient_hr_footer"></div>
-
-            <footer id="contact_us_content" class="contact_us">
-                <div class="footer_img_div">
-                    <a href="/index.html">
-                        <img src="/src/assets/images/logos/transparent/ezestates_transparent_logo_left.png" alt="Ezestates logo" id="ezestates_footer_img">
-                    </a>
-                    <div id="ezestates_footer_description">
-                        <p>The best and eziest way to rent homes.</p>
+                <div class="footer_top_img">
+                    <div style="display: flex; justify-content: end; margin: 3em 0 0 0;">
+                        <img src="/src/assets/images/generals/footerImg2.png" alt="footer image" height="200px">
                     </div>
-                    <div class="gradient"></div>
+                    <div class="gradient gradient_hr_footer"></div>
                 </div>
-
-                <div class="footer_links">
-                    <div class="ul_div">
-                        <ul class="footer_links_ul">
-                            <li class="footer_links_li footer_link_header">Main Menu</li>
-                            <li class="footer_links_li">
-                                <a href="#" class="footer_links_link">Home</a>
-                            </li>
-                            <li class="footer_links_li">
-                                <a href="#" class="footer_links_link">Offers</a>
-                            </li>
-                            <li class="footer_links_li">
-                                <a href="#" class="footer_links_link">Menus</a>
-                            </li>
-                            <li class="footer_links_li">
-                                <a href="#" class="footer_links_link">Reservation</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="ul_div">
-                        <ul class="footer_links_ul">
-                            <li class="footer_links_li footer_link_header">Useful links</li>
-                            <li class="footer_links_li">
-                                <a href="#" class="footer_links_link">About us</a>
-                            </li>
-                            <li class="footer_links_li">
-                                <a href="#" class="footer_links_link">Events</a>
-                            </li>
-                            <li class="footer_links_li">
-                                <a href="#" class="footer_links_link">Blogs</a>
-                            </li>
-                            <li class="footer_links_li">
-                                <a href="#" class="footer_links_link">FAQs</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="ul_div">
-                        <ul class="footer_links_ul">
-                            <li class="footer_links_li footer_link_header">Contact Us</li>
-                            <li class="footer_links_li_contact_us">
-                                <a href="mailto:example@email.com">ezestates mail</a>
-                                <p>(ezestates@gmail.com)</p>
-                            </li>
-                            <li class="footer_links_li_contact_us">
-                                <a href="tel:+64 958 248 966">ezestates landline</a>
-                                <p>(+64 958 248 966)</p>
-                            </li>
-                            <li class="footer_links_li social_media_handles">Social media handles</li>
-                            
-                            <div class="socials">
-                                <div>
-                                    <a href="https://www.facebook.com" target="_blank">
-                                        <img src="/src/assets/images/generals/facebook_icon.png" alt="social facebook" id="socials_facebook">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.instagram.com" target="_blank">
-                                        <img src="/src/assets/images/generals/instagram__icon.png" alt="social instagram" id="socials_instagram">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.twitter.com" target="_blank">
-                                            <img src="/src/assets/images/generals/twitter_icon.png" alt="social  twitter" id="socials_twitter">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.youtube.com" target="_blank">
-                                        <img src="/src/assets/images/generals/youtube_icon.png" alt="social  youtube" id="socials_youtube">
-                                    </a>
-                                </div>
+                
+                <footer id="contact_us_content">
+                    <div class="contact_us">
+                        <div class="footer_img_div">
+                            <a href="/index.html">
+                                <img src="/src/assets/images/logos/transparent/ezestates_transparent_logo_left.png" alt="Ezestates logo" id="ezestates_footer_img">
+                            </a>
+                            <div id="ezestates_footer_description">
+                                <p>
+                                    The best and eziest way to rent homes.
+                                    <!-- <div class="gradient"></div> -->
+                                </p>
                             </div>
-                        </ul>
+                        </div>
+        
+                        <div class="footer_links_top_gradient"></div>
+        
+                        <div class="footer_links">
+                            <div class="ul_div">
+                                <ul class="footer_links_ul">
+                                    <li class="footer_links_li footer_link_header">Main Menu</li>
+                                    <div class="footer_link_content">
+                                        <li class="footer_links_li">
+                                            <a href="#" class="footer_links_link">Home</a>
+                                        </li>
+                                        <li class="footer_links_li">
+                                            <a href="#" class="footer_links_link">Offers</a>
+                                        </li>
+                                        <li class="footer_links_li">
+                                            <a href="#" class="footer_links_link">Menus</a>
+                                        </li>
+                                        <li class="footer_links_li">
+                                            <a href="#" class="footer_links_link">Reservation</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+        
+                            <div class="ul_div">
+                                <ul class="footer_links_ul">
+                                    <li class="footer_links_li footer_link_header">Useful links</li>
+                                    <div class="footer_link_content">
+                                        <li class="footer_links_li">
+                                            <a href="#" class="footer_links_link">About us</a>
+                                        </li>
+                                        <li class="footer_links_li">
+                                            <a href="#" class="footer_links_link">Events</a>
+                                        </li>
+                                        <li class="footer_links_li">
+                                            <a href="#" class="footer_links_link">Blogs</a>
+                                        </li>
+                                        <li class="footer_links_li">
+                                            <a href="#" class="footer_links_link">FAQs</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+        
+                            <div class="ul_div">
+                                <ul class="footer_links_ul">
+                                    <li class="footer_links_li footer_link_header">Contact Us</li>
+                                    <div class="footer_link_content">
+                                        <li class="footer_links_li_contact_us">
+                                            <a href="mailto:example@email.com">ezestates mail</a>
+                                            <p>(ezestates@gmail.com)</p>
+                                        </li>
+                                        <li class="footer_links_li_contact_us">
+                                            <a href="tel:+64 958 248 966">ezestates landline</a>
+                                            <p>(+64 958 248 966)</p>
+                                        </li>
+                                    </div>
+                                    <div class="socials">
+                                        <li class="footer_links_li social_media_handles">Social media handles</li>
+                                        <!-- <div class="socials_icons"> -->
+                                            <a href="https://www.facebook.com" target="_blank">
+                                                <img src="/src/assets/images/generals/facebook_icon.png" alt="social facebook" id="socials_facebook">
+                                            </a>
+                                            <a href="https://www.instagram.com" target="_blank">
+                                                <img src="/src/assets/images/generals/instagram__icon.png" alt="social instagram" id="socials_instagram">
+                                            </a>
+                                            <a href="https://www.twitter.com" target="_blank">
+                                                <img src="/src/assets/images/generals/twitter_icon.png" alt="social  twitter" id="socials_twitter">
+                                            </a>
+                                            <a href="https://www.youtube.com" target="_blank">
+                                                <img src="/src/assets/images/generals/youtube_icon.png" alt="social  youtube" id="socials_youtube">
+                                            </a>
+                                        <!-- </div> -->
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <br />
                     </div>
+                </footer>
+
+                <p style="display: flex; justify-content: center; align-items: center;">&#169; 2024 Subodh R Pataki | All rights reserved</p>
+                <br>
+
+                <!-- scroll to top -->
+                <div class="scroll_to_top">
+                    <a href="#">
+                        <i class="fa-solid fa-chevron-up" id="single_up_arrow"></i>
+                        <i class="fa-solid fa-angles-up" id="double_up_arrow"></i>
+                    </a>
                 </div>
-                <br />
-            </footer>
-
-            <br>
-            <p style="display: flex; justify-content: center; align-items: center;">&#169; 2024 Subodh R Pataki | All rights reserved</p>
-            <br>
-
-            <!-- scroll to top -->
-            <div class="scroll_to_top">
-                <a href="#">
-                    <i class="fa-solid fa-chevron-up" id="single_up_arrow"></i>
-                    <i class="fa-solid fa-angles-up" id="double_up_arrow"></i>
-                </a>
             </div>
         </div>
     </div>
     
     <!-- <script src="/src/components/load_up.js"></script> -->
-
+    <script src="/src/components/hamburger.js"></script>
     <!-- vercel metrics -->
     <script>
         window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
