@@ -149,12 +149,6 @@ html{
     }
 } */
 
-/* main content */
-/* .main_content{
-    padding: 0.6em;
-    margin: 0.6em;
-} */
-
 .home_page, .about_us_page, .services_page, .reviews_page {
     /* padding: 1.05em;
     margin: 1.05em; */
@@ -310,13 +304,6 @@ html{
     color: #fff;
     padding: 0 1.2em 0 1.2em;
 }
-
-/* @media (width < 1150px) {
-    .playcards {
-        flex-direction: column;
-        align-items: center;
-    }
-} */
 
 .review_playcard {
     border: 0.3em solid #1f6a26;
@@ -477,25 +464,26 @@ html{
 }
 
 .socials {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 10px;
 }
 
 .socials > li {
     grid-column: span 4;
 }
 
-#socials_facebook, #socials_instagram, #socials_twitter, #socials_youtube {
+#socials_facebook, #socials_instagram, #socials_twitter, #socials_youtube, #socials_bentome {
     height: 30px;
     padding: 0.6em;
 }
 
-.socials > a > img {
+.socials > .tooltip > a > img {
     text-decoration: none;
     color: #0f0f0f;
 }
 
-.socials > a::after {
+.socials > .tooltip > a::after {
     content: '';
     width: 0;
     height: 2px;
@@ -503,13 +491,51 @@ html{
     display: block;
 }
 
-.socials > a:hover::after {
+.socials > .tooltip > a:hover::after {
     transition: all 0.3s linear;
     width: 100%;
 }
 
-.socials > a:hover {
+.socials > .tooltip > a:hover {
     color: #1f6a26;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 .footer_links_li {
@@ -517,13 +543,12 @@ html{
 }
 
 /* Media Query for Mobile Devices (Smartphones) */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    /* Your CSS styles for smartphones (portrait and landscape) */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    
 }
 
 /* Media Query for Tablets */
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    /* Your CSS styles for tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 984px) {
     #left_side_nav_bar_img1 {
         max-width: 13em;
         padding: 1.35em 0 1em 0;
@@ -666,7 +691,9 @@ html{
 
     .playcards {
         margin: 0;
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .service_playcard {
@@ -720,11 +747,223 @@ html{
         display: block;
     }
 
+    .footer_links {
+        display: flex;
+        margin: 2em 0;
+        justify-content: space-around;
+    }
 }
 
-/* ***************************************************************************** */
-/* WRITE CSS FROM 984 TO 1199PX SO TO BALANCE IT (MAKE ALL VALUES BETWEEN OF TAB AND DESKTOP)  */
-/* ***************************************************************************** */
+/* Media Query from 984 TO 1199PX */
+@media only screen and (min-width: 984px) and (max-width: 1199px) {
+    #left_side_nav_bar_img1 {
+        max-width: 15em;
+        padding: 1.35em 0 1em 0;
+    }
+    
+    #left_side_nav_bar_img2 {
+        display: none;
+    }
+    
+    .desktop-nav {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #right_side_nav_bar_home ,#right_side_nav_bar_about_us, #right_side_nav_bar_services, #right_side_nav_bar_reviews, #right_side_nav_bar_contact_us {
+        font-size: 1.05em;
+        padding: 0.25;
+    }
+
+    /* CSS for Home Page Content */
+    #home_content {
+        display: flex;
+    }
+
+    .main_content {
+        position: relative;
+        top: 7em;
+        flex: 1;
+    }
+    
+    .journey_begin {
+        font-size: 3.2rem;
+    }
+    
+    .journey_details {
+        padding: 0.6em 0;
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+        margin-bottom: 0.8em;
+    }
+    
+    .anchor_role_button {
+        padding: 0.5em 0.8em;
+        border-radius: 1.2em;
+        box-shadow: 0.06em 0.06em 0.3em #0f0f0f;
+        font-size: 1.1rem;
+    }
+
+    .home_page_left_side_content {
+        flex: 1;
+        flex-shrink: 1;
+        display: flex;
+        align-items: center;
+        margin-left: 2em;
+    }
+
+    #home_page_right_side_content {
+        flex: 1;
+        padding: 20px 20px 20px 0;
+        position: relative;
+    }
+
+    #home_page_right_side_content_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* CSS for About Us Page Content */
+    #about_us_content {
+        display: flex;
+        margin-top: 4.5rem;
+    }
+
+    .about_us_page_right_side_content {
+        flex: 1;
+        flex-shrink: 1;
+        display: flex;
+        align-items: center;
+        margin-left: 2em;
+    }
+
+    #about_us_page_left_side_content {
+        flex: 1;
+        padding: 20px 20px 20px 20px;
+        position: relative;
+    }
+
+    #about_us_page_left_side_content_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about_us_page_right_side_content_for_desktop {
+        display: none;
+
+    }
+    
+    .about_us_page_right_side_content_for_mobile_p {
+        padding: 0.6em 0 0 0;
+    }
+    .about_us_page_right_side_content_for_mobile_read_more {
+        text-decoration: none;
+        border-bottom: 1px solid;
+        color: #0f0f0f;
+
+        span {
+            display: none;
+        }
+    }
+
+    .about_us_page_right_side_content_for_mobile_read_more:hover {
+        color: #1f6a26;
+        border: none;
+        span {
+            display: contents;
+        }
+    }
+
+    /* CSS for services Page Content */
+    #services_content, #reviews_content, #contact_us_content {
+        margin-top: 4.5rem;
+    }
+
+    .services_page_review_page {
+        text-align: center;
+    }
+    
+    .services_page_review_page_for_mobile  {
+        font-size: 1.5rem;
+    }
+
+    #services_content, #reviews_content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .playcards {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service_playcard {
+        display: flex;
+        /* margin: 0 1.2em; */
+        width: 650px;
+        border-radius: 20px;
+        height: 150px;
+    }
+    
+    .review_playcard {
+        display: flex;
+        width: 650px;
+        height: 200px;
+        border-radius: 10px 60px;
+        border: 0.2em solid #1f6a26;
+    }
+
+    .services_playcard_image {
+        height: 75px;
+    }
+    
+    .review_playcard_image {
+        height: 125px;
+        padding: 2.1rem;
+    }
+
+    .services_playcard_image_headline, .review_playcard_image_headline {
+        font-size: 2em;
+    }
+
+    .playcard_img_div, .playcard_description_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review_playcard_image_description {
+        font-size: 1rem;
+    }
+
+    .contact_us {
+        margin-top: 2em;
+    }
+
+    .footer_top_img {
+        display: none;
+    }
+
+    .footer_img_div {
+        display: none;
+    }
+
+    .footer_links_top_gradient {
+        display: block;
+    }
+
+    .footer_links {
+        display: flex;
+        margin: 2em 0;
+        justify-content: space-around;
+    }
+}
 
 /* Media Query for Desktops */
 @media only screen and (min-width: 1199px) {
@@ -795,7 +1034,7 @@ html{
 
     #about_us_page_left_side_content {
         flex: 1;
-        padding: 20px 40px 20px 0;
+        /* padding: 20px 40px 20px 0; */
         position: relative;
     }
 
