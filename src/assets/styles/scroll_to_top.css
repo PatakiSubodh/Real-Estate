@@ -13,6 +13,6 @@
 }
 .scroll_to_top > a:hover > #double_up_arrow{
     display: block;
-    font-size: 60px;
+    /* font-size: 60px; */
     color: #1f6a26;
 }
