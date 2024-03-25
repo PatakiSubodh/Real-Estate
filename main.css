@@ -11,6 +11,29 @@ html{
     scroll-behavior: smooth;
 }
 
+/* For WebKit based browsers */
+/* Width */
+::-webkit-scrollbar {
+    width: 0.5rem; /* Set the width */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: #e5e4e2;  */
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1f6a26; /* Your custom scrollbar color */
+    border-radius: 0.3rem; /* Make corners round */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #15521b; /* Your custom scrollbar color on hover */
+}
+
 /* :root{
     --display-main: none;
 }
