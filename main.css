@@ -36,12 +36,8 @@ html{
     padding: 0.6em 0 0.6em 0;
 }
 
-#right_side_nav_bar_home, #right_side_nav_bar_about_us, #right_side_nav_bar_services, #right_side_nav_bar_reviews {
+#right_side_nav_bar_home, #right_side_nav_bar_about_us, #right_side_nav_bar_services, #right_side_nav_bar_reviews, #right_side_nav_bar_contact_us {
     padding: 1.2em 1.2em 1.2em 1.2em;
-}
-
-#right_side_nav_bar_contact_us {
-    padding: 1.2em 3em 1.2em 1.2em;
 }
 
 .right_side_nav_bar > a {
@@ -114,8 +110,8 @@ html{
     width: 100%;
     min-height: 100vh;
     display: block;
-    background-color: #0f0f0f;
     padding-top: 120px;
+    background-color: #fff;
     z-index: 98;
     transition: 0.4s;
 }
@@ -130,14 +126,16 @@ html{
     max-width: 200px;
     margin: 0 auto 16px;
     text-align: center;
-    font-size: 1.5rem;
-    color: #1f6a26;
-    background-color: #fff;
+    font-size: 1.2em;
+    color: #000;
+    background-color: #e5e4e2;
     text-decoration: none;
 }
 
 .mobile-nav a:hover {
-    background-color: aliceblue;
+    background-color: #fff;
+    color: #1f6a26;
+    border: 1px solid #1f6a26;
 }
 
 .home_page, .about_us_page, .services_page, .reviews_page {
@@ -511,8 +509,7 @@ html{
     }
 
     #right_side_nav_bar_home ,#right_side_nav_bar_about_us, #right_side_nav_bar_services, #right_side_nav_bar_reviews, #right_side_nav_bar_contact_us {
-        font-size: 0.95em;
-        padding: 0.25;
+        font-size: 1em;
     }
 
     /* CSS for Home Page Content */
@@ -702,22 +699,16 @@ html{
     .footer_links {
         display: flex;
         flex-direction: column;
-        margin: 2em 0;
+        margin: 1em;
         justify-content: space-around;
     }
 
-    .footer_links {
-        margin-left: 3%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-
     .footer_link_header {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .footer_links_li, .footer_links_li_contact_us {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .copyrights {
@@ -731,7 +722,7 @@ html{
 }
 
 /* Media Query from 543px to 767px */
-@media only screen and (min-width: 543px) and (max-width: 767px) {
+@media only screen and (min-width: 543px) and (max-width: 784px) {
     #left_side_nav_bar_img1 {
         max-width: 14em;
         padding: 0.5em 0;
@@ -752,8 +743,7 @@ html{
     }
 
     #right_side_nav_bar_home ,#right_side_nav_bar_about_us, #right_side_nav_bar_services, #right_side_nav_bar_reviews, #right_side_nav_bar_contact_us {
-        font-size: 0.95em;
-        padding: 0.25;
+        font-size: 1em;
     }
 
     /* CSS for Home Page Content */
@@ -966,7 +956,12 @@ html{
 }
 
 /* Media Query for Tablets */
-@media only screen and (min-width: 767px) and (max-width: 984px) {
+@media only screen and (min-width: 784px) and (max-width: 984px) {
+
+    #right_side_nav_bar_contact_us {
+        padding: 1.2em 3em 1.2em 1.2em;
+    }
+
     #left_side_nav_bar_img1 {
         max-width: 13em;
         padding: 1.35em 0 1em 0;
@@ -985,8 +980,7 @@ html{
     }
 
     #right_side_nav_bar_home ,#right_side_nav_bar_about_us, #right_side_nav_bar_services, #right_side_nav_bar_reviews, #right_side_nav_bar_contact_us {
-        font-size: 0.95em;
-        padding: 0.25;
+        font-size: 1em;
     }
 
     /* CSS for Home Page Content */
@@ -1182,6 +1176,11 @@ html{
 
 /* Media Query from 984px to 1199px */
 @media only screen and (min-width: 984px) and (max-width: 1199px) {
+
+    #right_side_nav_bar_contact_us {
+        padding: 1.2em 3em 1.2em 1.2em;
+    }
+
     #left_side_nav_bar_img1 {
         max-width: 15em;
         padding: 1.35em 0 1em 0;
@@ -1400,6 +1399,11 @@ html{
 
 /* Media Query for Desktops */
 @media only screen and (min-width: 1199px) {
+
+    #right_side_nav_bar_contact_us {
+        padding: 1.2em 3em 1.2em 1.2em;
+    }
+
     #left_side_nav_bar_img1 {
         max-width: 20em;
         padding: 1.35em 1em;
